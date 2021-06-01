@@ -312,6 +312,15 @@ body{
     background-repeat: no-repeat;
     background-position: center;
 }
+.wrapper-webdev .webdev-project-box:nth-child(5)::before,
+.wrapper-webdev .webdev-project-box:nth-child(5)::after
+{
+    background-image: url("./img/procent.png");
+    background-size: 120%;
+    background-repeat: no-repeat;
+    background-color: #bad3d3;
+}
+
 .wrapper-webdev .webdev-project-box:nth-child(6)::before,
 .wrapper-webdev .webdev-project-box:nth-child(6)::after
 {
@@ -321,6 +330,7 @@ body{
     background-position: center;
     background-color: white;
 }
+
 
 .wrapper-webdev .webdev-project-box span
 {
