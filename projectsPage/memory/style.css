@@ -1,0 +1,144 @@
+/* The overall styling */
+
+* {
+    margin: 0;
+    padding: 0;
+    background: rgb(255, 255, 255);
+}
+
+.noDisplay {
+    display: none;
+}
+
+/* Wrapper */
+.wrapper {
+    background: rgb(0, 0, 0);
+    height: 100%;
+    position: absolute;
+    padding: 20px;
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    overflow-y: scroll;
+}
+.return{
+    position: relative;
+    display: block;
+    color: white;
+    background: white;
+}
+
+/* Style setup game */
+
+/* .select-level {
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+} */
+
+.select-level fieldset {
+    border: rgb(70, 102, 255) 2px solid;
+    text-align: center;
+    font-family: 'Goldman';
+    height: auto;
+    font-size: 2em;
+    background: transparent;
+}
+
+.select-level fieldset legend {
+    font-size: 3rem;
+    color: rgb(70, 102, 255);
+    text-shadow: rgb(70, 102, 255) 0 0 0.125em;
+    background: transparent;
+}
+
+select {
+    font-size: 1rem;
+    font-family: 'Goldman';
+    margin-bottom: 5px;
+}
+
+
+/* start playing button */
+
+.play-btn {
+    cursor: pointer;
+    width: 200px;
+    height: 50px;
+    background: transparent;
+    color: rgb(70, 102, 255);
+    text-shadow: rgb(70, 102, 255) 0 0 0.125em;
+    border: rgb(70, 102, 255) solid 3px;
+    margin-bottom: 0.1rem;
+    font-family: 'Goldman';
+}
+
+.play-btn:hover {
+    background: rgb(255, 255, 255);
+}
+
+
+
+/* Styling the game Cards */
+
+/* the container to make the card flip */
+
+.card {
+    border: 1px solid #f1f1f1;
+    perspective: 1000px;
+    margin: 5px;
+    cursor: pointer;
+    position: relative;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    transform: scale(1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card:active {
+    transform: scale(0.9);
+    transition: transform 0.2s;
+}
+
+.card.flip {
+    transform: rotateY(180deg);
+}
+
+
+/* the card with content */
+
+.card-front,
+.card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    /* Safari */
+    backface-visibility: hidden;
+}
+
+.card-front {
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    transform: rotateY(180deg);
+}
+
+.card-back {
+    background-image: url("./img/Spider-Man-Emblem.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-position: center;
+}
