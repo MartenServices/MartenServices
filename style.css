@@ -286,8 +286,8 @@ body{
     filter: blur(20px);
 }
 
-.wrapper-webdev .webdev-project-box:nth-child(2)::before,
-.wrapper-webdev .webdev-project-box:nth-child(2)::after
+.wrapper-webdev .webdev-project-box:nth-child(1)::before,
+.wrapper-webdev .webdev-project-box:nth-child(1)::after
 {
     background-image: url("./img/calculator.png");
     background-size: 100%;
@@ -295,8 +295,8 @@ body{
     background-position: center;
 }
 
-.wrapper-webdev .webdev-project-box:nth-child(4)::before,
-.wrapper-webdev .webdev-project-box:nth-child(4)::after
+.wrapper-webdev .webdev-project-box:nth-child(3)::before,
+.wrapper-webdev .webdev-project-box:nth-child(3)::after
 {
     background-image: url("./img/tra.jpg");
     background-size: 120%;
@@ -304,16 +304,16 @@ body{
     background-position: center;
 }
 
-.wrapper-webdev .webdev-project-box:nth-child(6)::before,
-.wrapper-webdev .webdev-project-box:nth-child(6)::after
+.wrapper-webdev .webdev-project-box:nth-child(9)::before,
+.wrapper-webdev .webdev-project-box:nth-child(9)::after
 {
     background-image: url("./img/tula.jpg");
     background-size: 120%;
     background-repeat: no-repeat;
     background-position: center;
 }
-.wrapper-webdev .webdev-project-box:nth-child(8)::before,
-.wrapper-webdev .webdev-project-box:nth-child(8)::after
+.wrapper-webdev .webdev-project-box:nth-child(6)::before,
+.wrapper-webdev .webdev-project-box:nth-child(6)::after
 {
     background-image: url("./projectsPage/memory/img/Spider-Man-Emblem.png");
     background-size: 120%;
