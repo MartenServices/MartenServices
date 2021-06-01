@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://use.fontawesome.com/releases/v5.15.2/js/all.js" data-auto-a11y="true"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>	
+    <link href="../style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&display=swap" rel="stylesheet">    
+    <title>Calculator || Projects </title>
+</head>
+<body>
+    <header class="navbar sticky-top">
+        <nav id="nav" class="container-fluid navbar navbar-expand-md navbar-dark " style="background-color: black;">
+            <div class="container fluid row">
+                <div class="col-sm-6" style="float: left;">
+                    <a class="navbar-brand" href="../index.html">Ryan<br>Marten</a>
+                    <button id="nav-toggler" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                        <span  class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+                <div class="col-sm-6">  
+                    <div class=" collapse navbar-collapse" id="collapsibleNavbar">
+                        <ul class="nav nav-pills nav-justified">
+                            <li class="nav-item">
+                                <a class="nav-link bg-light text-dark" href="../index.html#about-me-left">About Me</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link bg-light text-dark" href="../experience.html">Experience</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active text-dark" href="projects.html">Projects</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link bg-light text-dark" href="../index.html#contact">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- <section class="wrapper-calculator">
+        <div class="calculator-box">
+            <div id="calculator-screen" class="calculator-sreen"></div>
+            <div class="ac nbox">AC</div>
+            <div class="root nbox">√</div>
+            <div class="wortel nbox"><Sub>2</Sub></div>
+            <div class="one nbox">1</div>
+            <div class="two nbox">2</div>
+            <div class="three nbox">3</div>
+            <div class="four nbox">4</div>
+            <div class="five nbox">5</div>
+            <div class="six nbox">6</div>
+            <div class="seven nbox">7</div>
+            <div class="eight nbox">8</div>
+            <div class="nine nbox">9</div>
+            <div class="zero nbox">0</div>
+            <div class="point nbox">.</div>
+            <div class="plus nbox">+</div>
+            <div class="minus nbox">-</div>
+            <div class="divide nbox">/</div>
+            <div class="times nbox">*</div>
+            <div class="result nbox">=</div>
+        </div>
+
+        <div class="result nbox">=</div>
+    </section> -->
+    <form name="calculator" class="calculator">
+        <table class="calculator-table">
+            <tr>
+                <td colspan="4">
+                    <input type="text" id="display" class="output-screen" maxlength="20" value="0">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="button" class="btn btnClear" onclick="clearDisplay(this.form.display)"value="C">
+                    <input type="button" class="btn btnAdd btnSqrt btnMath"value="&#8730">
+                    <input type="button" class="btn btnAdd btnPow btnMath" value="&#178">
+                    <input type="button" class="btn btnAdd btnMath" value="/">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="button" class="btn btnAdd btnNum") value="7">
+                    <input type="button" class="btn btnAdd btnNum" value="8">
+                    <input type="button" class="btn btnAdd btnNum" value="9">
+                    <input type="button" class="btn btnAdd btnMath" value="+">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="button" class="btn btnAdd btnNum" value="4">
+                    <input type="button" class="btn btnAdd btnNum" value="5">
+                    <input type="button" class="btn btnAdd btnNum" value="6">
+                    <input type="button" class="btn btnAdd btnMath" value="-">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="button" class="btn btnAdd btnNum" value="1">
+                    <input type="button" class="btn btnAdd btnNum" value="2">
+                    <input type="button" class="btn btnAdd btnNum" value="3">
+                    <input type="button" class="btn btnAdd btnMath" value="*">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="button" class="btn btnAdd btnNum" value="0">
+                    <input type="button" class="btn btnAdd btnNum" onclick="addOnDisplay(this.form.display, '&#46')"value="&#46">
+                    <input type="button" class="btn btnChar" onclick="deleteNum(this.form.display)" value="&#8678">
+                    <input type="button" class="btn btnResult" onclick="showResult(this.form.display)" value="&#61">
+                </td>
+            </tr>
+        </table>
+    </form>   
+    <script src="js/calculator.js"></script>
+    <script src="js/fancyCalculator.js"></script>
+</body>
+</html>

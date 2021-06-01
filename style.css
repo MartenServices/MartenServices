@@ -1,0 +1,634 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    margin: auto;
+    background: black;
+}
+
+.page{
+    width: 90%;
+    margin:5px auto;
+    background-image: url("./img/background2.jpg");
+    border: rgb(121, 209, 218) solid 2px;
+    border-radius: 1%;
+    box-shadow: 7px 1px 6px 5px  rgb(184, 184, 207);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+#nav{
+    font-family: 'Goldman';
+    font-size: 15px;
+    position: relative;
+    width: 90%;
+    margin: auto;
+    border-bottom: white solid 1.5px;
+}
+
+.navbar-brand
+{
+    display: flex;
+    justify-content: flex-end;
+    margin:auto;   
+}
+
+
+.wrapper-nav-links
+{
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    margin:auto;
+}
+
+.nav-link{
+    margin: 2px;
+    color: #CCA000; 
+}
+
+.name
+{
+    color: white;
+    float: right;
+}
+
+#nav-toggler{
+    float: right;
+    margin: auto 5px;
+}
+
+.about
+{
+    font-family: 'Goldman'; 
+    font-size: 18px;
+    width: 90%;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;    
+    text-align: center;
+}
+
+.who-am-i
+{
+    border: whitesmoke 1px double;
+}
+
+.list
+{
+    color: #CCA000;
+}
+
+.projects
+{
+    margin: auto;
+    padding: 20px;
+    width: 100%;
+}
+
+.wrapper
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 45px 0;
+    flex-wrap: wrap;
+}
+
+.wrapper .box
+{
+    position: relative;
+    width: 300px;
+    height: 400px;
+    margin: 5px 15px;
+    color:  #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    font-family: 'Goldman';
+}
+
+.wrapper .box:hover
+{
+    transform: translateY(-10px);
+}
+
+.wrapper .box::before
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg,#CCA000, rgb(245, 222, 136));
+}
+
+.wrapper .box::after
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg,#CCA000, rgb(245, 222, 136));
+    filter: blur(20px);
+}
+
+.wrapper .box:nth-child(2)::before,
+.wrapper .box:nth-child(2)::after
+{
+    background: linear-gradient(270deg,#CCA000, rgb(245, 222, 136));
+}
+
+.wrapper .box:nth-child(3)::before,
+.wrapper .box:nth-child(3)::after
+{
+    background: linear-gradient(112deg,#CCA000, rgb(245, 222, 136));
+}
+
+.wrapper .box span
+{
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    right: 6px;
+    bottom: 6px;
+    background: black;
+    z-index: 2;
+    opacity: 0.6;
+}
+
+.wrapper .box span::before
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: white   ;
+    opacity: 0.1;
+    pointer-events: none;
+}
+
+.wrapper .box .content
+{
+    position: relative;
+    z-index: 3;
+    padding: 20px 40px;
+}
+
+.wrapper .box .content h2
+{
+    font-size: 2em;
+}
+
+.wrapper .box .content p
+{
+    line-height: 1.4em;
+    margin-bottom: 10px;
+}
+
+.wrapper .box .content a
+{
+    display: inline-block;
+    color: black;
+    font-size: 1.1em;
+    background: white;
+    padding: 5px 10px;
+    text-decoration: none;
+}
+
+/* Footer content */
+.social
+{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    flex-wrap: wrap;
+}
+
+.social a 
+{
+    margin: 0px 20px;
+    font-size: 28px;
+    color: whitesmoke;
+}
+
+.social div 
+{
+    margin: 0px 20px;
+    font-size: 12px;
+    line-height: 2.4rem;
+    color: whitesmoke;
+}
+
+/* Webdev style */
+
+.wrapper-webdev
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 45px 0;
+}
+
+.wrapper-webdev .webdev-project-box 
+{
+    position: relative;
+    width: 250px;
+    height: 300px;
+    margin: 5px auto;
+    color:  #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.6s;
+    font-family: 'Goldman';
+}
+
+.wrapper-webdev .webdev-project-box:hover
+{
+    transform: translateY(-10px) rotateY(-10deg);
+    box-shadow: inset;
+}
+
+.wrapper-webdev .webdev-project-box::before
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg,#CCA000, rgb(245, 222, 136));
+}
+
+.wrapper-webdev .webdev-project-box::after
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg,#CCA000, rgb(245, 222, 136));
+    filter: blur(20px);
+}
+
+.wrapper-webdev .webdev-project-box:nth-child(2)::before,
+.wrapper-webdev .webdev-project-box:nth-child(2)::after
+{
+    background-image: url("./img/calculator.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.wrapper-webdev .webdev-project-box:nth-child(4)::before,
+.wrapper-webdev .webdev-project-box:nth-child(4)::after
+{
+    background-image: url("./img/tra.jpg");
+    background-size: 120%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.wrapper-webdev .webdev-project-box:nth-child(6)::before,
+.wrapper-webdev .webdev-project-box:nth-child(6)::after
+{
+    background-image: url("./img/tula.jpg");
+    background-size: 120%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.wrapper-webdev .webdev-project-box:nth-child(8)::before,
+.wrapper-webdev .webdev-project-box:nth-child(8)::after
+{
+    background-image: url("./projectsPage/memory/img/Spider-Man-Emblem.png");
+    background-size: 120%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: white;
+}
+
+.wrapper-webdev .webdev-project-box span
+{
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    right: 6px;
+    bottom: 6px;
+    background: black;
+    z-index: 2;
+    opacity: 0.1;
+}
+
+.wrapper-webdev .webdev-project-box span::before
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: white   ;
+    opacity: 0.1;
+    pointer-events: none;
+}
+
+.wrapper-webdev .webdev-project-box .content
+{
+    position: relative;
+    z-index: 3;
+    padding: 20px 40px;
+    text-align: center;
+}
+
+.wrapper-webdev .webdev-project-box a
+{
+    font-weight: bold;
+    font-size: 32px;
+    text-decoration: none;
+    color: #000;
+}
+
+/* Style Weather app */
+
+.wrapper-weather-app
+{
+    position: relative;
+    width: 500px;
+    height: 500px;
+    margin: auto;
+    background: #ffffff;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10vh;
+}
+
+.wrapper-weather-app canvas
+{
+    width: 300px    ;
+    height: 50vh;
+    margin:  0 auto;
+    background: #000;
+    display: flex;
+    justify-content: center;
+}
+
+.weather-box
+{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.wrapper-weather-app .weather-box label
+{
+    color: #CCA000;
+    font-family: 'Goldman';
+    font-size: 18px;
+}
+
+.wrapper-weather-app .weather-box .weather-button
+{
+    width: 100px;
+    height: 5vh;
+    margin: 20px 5px;
+}
+
+/* Style calculator */
+
+.wrapper-calculator
+{
+    width: auto;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    position: relative;
+}
+
+.wrapper-calculator .calculator-box
+{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto;
+    margin: auto;
+    width: auto;
+    height: auto;
+    border: rgb(102, 102, 102) solid 15px;
+    border-radius: 5%;
+    padding: 6px;
+    background: lightgrey;
+}
+
+.wrapper-calculator .calculator-box .calculator-sreen
+{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    width: 100%;
+    height: 10vh;
+    margin: 6px auto;
+    padding: 4px;
+    border: rgb(102, 102, 102) solid 5px;
+    background-color: black;
+}
+
+.wrapper-calculator .calculator-box .nbox
+{
+    width: 10vh;
+    height: 5vh;
+    margin: 4px;
+    padding: 4px;
+    color: white;
+    background: gray;
+    border: rgb(62, 178, 245) solid 1px;
+    text-align: center;
+}
+
+.wrapper-calculator .calculator-box .nbox:hover
+{
+  background-color: lawngreen;
+  color:black;
+}
+
+
+/* Style calculator with buttons */
+.calculator
+{
+    background:rgb(189, 182, 182);
+    width: 320px;
+    height: 340px;
+    display: flex;
+    justify-content: center;
+    justify-items: auto;
+    padding: 6px;
+    position: relative;
+    border: rgb(90, 82, 90) 10px solid;
+    border-radius: 5%;
+    margin: 10px auto;
+}
+
+.calculator-table
+{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    position: absolute;
+    margin: auto;
+    border-radius: 5%;
+
+}
+
+.btn
+{
+    width: 65px;
+    height: 45px;
+    margin: 2px 1px;
+    border: rgb(102, 102, 102) solid 2px;
+    font-family: 'Goldman';
+    font-weight: bold;
+}
+
+.btn:hover
+{
+    background: #CCA000;
+    transform: translateY(1px);
+    box-shadow: -1px -1px 1px rgb(102, 102, 102) ;
+}
+
+.btnNum
+{
+    background: #bad3d3;
+}
+
+.btnChar
+{
+    background: rgb(97, 165, 204);
+}
+
+.btnMath
+{
+    background: rgb(206, 194, 87);
+}
+
+.btnResult
+{
+    background: rgb(74, 175, 96);
+}
+
+.btnClear
+{
+    background: rgb(202, 73, 73);
+}
+
+.output-screen
+{
+    height: 6vh;
+    border-radius: 5%;
+    background: #000;
+    border: #fff solid 2px;
+    width: 280px;
+    color: white;
+    text-align: right;
+    font-size: 24px;
+}
+
+/* Wrapper Number experiment */
+.wrapper-numbers
+{
+    display: none;
+    width: 200px;
+    height: 150px;
+    background: #ffffff;
+}
+
+.your-number
+{
+    width: 50px;
+    height: 50px;
+    background: #fff;
+    color: #CCA000;
+    font-family: 'Goldman';
+    font-size: 18px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+/* Style of the webprojects ------> Incommon GAME */
+
+.wrapper-incommon-game{
+    width: 50%;
+    margin: 40px auto;
+    position: relative;
+    display: flex;
+    justify-self: center;
+    justify-content: center;
+    border: white 1px double;
+}
+
+#wrapper-incommon-result{
+    position: absolute;
+    top: 0px;
+    left: 0;
+    bottom: 0;
+    right: 0;;
+    display: none;
+    background: white;
+    text-align: center;
+    font-family: 'Goldman';
+}
+.wrapper-close-result{
+    display: flex;
+    justify-content:flex-end;
+}
+
+#wrapper-incommon-result h5{
+    font-size: 45px;
+}
+
+.wrapper-answers-table{
+    width: inherit;
+    height: auto;
+    background: black;
+    color: white;
+}
+
+.wrapper-answers-table .tr td{
+    width: 200px;
+}
+
+.wrapper-incommon-game input:last-child{
+    background: black;
+    border: 5px solid rgb(232, 243, 79);
+    border-radius: 20%;
+    margin-left: 23px;
+    color: rgb(232, 243, 79);
+    font-family: 'Goldman';
+    font-size: 24px;
+    margin-bottom: 5px;
+    
+}
+legend{
+    color: white;
+    font-size: 32px;
+    font-family: 'Goldman';
+}
+
+label{
+    color:white;
+    margin: 5px auto;
+    font-family: 'Goldman';
+}

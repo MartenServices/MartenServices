@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://use.fontawesome.com/releases/v5.15.2/js/all.js" data-auto-a11y="true"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>	
+    <link href="../style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&display=swap" rel="stylesheet"> 
+    <title>What do we have in common</title>
+</head>
+<body>
+    <header class="navbar sticky-top">
+        <nav id="nav" class="container-fluid navbar navbar-expand-md navbar-dark " style="background-color: black;">
+            <div class="container fluid row">
+                <div class="col-sm-6" style="float: left;">
+                    <a class="navbar-brand" href="../index.html">Ryan<br>Marten</a>
+                    <button id="nav-toggler" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                        <span  class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+                <div class="col-sm-6">  
+                    <div class=" collapse navbar-collapse" id="collapsibleNavbar">
+                        <ul class="nav nav-pills nav-justified">
+                            <li class="nav-item">
+                                <a class="nav-link bg-light text-dark" href="../index.html#about-me-left">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link bg-light text-dark" href="../experience.html">Experience</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active text-dark" href="projects.html">Projects</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link bg-light text-dark" href="../index.html#contact">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container-fluid wrapper-incommon-game">
+        <form>
+            <legend>What is your favorite?</legend>
+            <fieldset>
+                <div class="favorite-color">
+                    <label>Color</label>
+                </div>
+                <div class="favorite-color-picks">
+                    <input type="text" class="color-list" list="color-list">
+                    <datalist id="color-list"></datalist>
+                </div>
+                <div class="favorite-fruit">
+                    <label>Fruit</label>
+                </div>
+                <div class="favorite-fruit-picks">
+                    <input type="text" list="fruit-list">
+                    <datalist id="fruit-list"></datalist>
+                </div>
+                <div class="favorite-food">
+                    <label>Food</label>
+                </div>
+                <div class="favorite-food-picks">
+                    <input type="text" list="food-list">
+                    <datalist id="food-list"></datalist>
+                </div>
+                <div class="favorite-drink">
+                    <label>Drink</label>
+                </div>
+                <div class="favorite-drink-picks">
+                    <input type="text" list="drink-list">
+                    <datalist id="drink-list"></datalist>
+                </div>
+                <div class="favorite-car">
+                    <label>Car</label>
+                </div>
+                <div class="favorite-car-picks">
+                    <input type="text" id="car" list="car-list">
+                    <datalist id="car-list"></datalist>
+                </div>  
+                <progress value="0" max="100" style="display: block;">5%</progress> 
+                <input type="button" id="incommon-result" class="submit-favorite" value="Next &#8667">         
+            </fieldset>
+        </form>
+        <div id="wrapper-incommon-result">
+            <div class="wrapper-close-result">
+                <input type="button" value="X" class="close-button" id="close-result-button">
+            </div>
+            <h5>We have  <p class="incommon-result-content" style="display: inline;"></p> in common!</h5>
+            <div class="wrapper-answers-table">
+                <table>
+                    <tr class="tr">
+                        <td>Favorites:</td>
+                        <td>Yours</td>
+                        <td>Mine</td>
+                    </tr>
+                    <tr class="tr">
+                        <td>Color</td>
+                        <td class="yours"></td>
+                        <td class="mine"></td>
+                    </tr>
+                    <tr class="tr">
+                        <td>Fruit</td>
+                        <td class="yours"></td>
+                        <td class="mine"></td>
+                    </tr>
+                    <tr class="tr">
+                        <td>Food</td>
+                        <td class="yours"></td>
+                        <td class="mine"></td>
+                    </tr>
+                    <tr class="tr">
+                        <td>Drink</td>
+                        <td class="yours"></td>
+                        <td class="mine"></td>
+                    </tr>
+                    <tr class="tr">
+                        <td>Car</td>
+                        <td class="yours"></td>
+                        <td class="mine"></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="wrapper-play-again">
+                <input type="button" value="&#8634" class="play-again" id="play-again-button">
+            </div>
+        </div>
+    </div>
+    <script src="js/inCommon.js"></script>
+    
+</body>
+</html>

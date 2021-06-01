@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Goldman:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> 
+    <script defer src="Player.js"></script>
+    <script defer src="Card.js"></script>
+    <script defer src="script.js"></script> 
+    <title>Spiderman Memory</title>
+</head>
+
+<body>
+    <div class="container-fluid return">
+        <a href="../webdevIndex.html">Return</a>
+    </div>
+    <div class="container wrapper">
+        <div class="select-level">
+            <form>
+                <fieldset>
+                    <legend>Game setup</legend>
+                    <label for="game-level">Select amount of pieces</label>
+                    <select id="game-level">
+                        <option value="">--Choose a option--</option>
+                        <option value=8>8</option>
+                        <option value=16>16</option>
+                        <option value=8>20</option>
+                    </select>
+                    <br>
+                    <label for="amount-of-players">Select amount of player(s)</label>
+                    <select id="amount-of-players">
+                        <option value="1">1</option>
+                        <!-- <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option> -->
+                    </select>
+                    <br>
+                    <input type="button" value="Play" class="play-btn">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
